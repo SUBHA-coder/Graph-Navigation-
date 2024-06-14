@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Navigation System</h1>
+        <div id="graph-container">
+            <!-- Graph will be rendered here -->
+        </div>
+        <div class="input-container">
+            <label for="start-node">Start Node:</label>
+            <input type="text" id="start-node">
+            <label for="end-node">End Node:</label>
+            <input type="text" id="end-node">
+            <button onclick="findShortestPath()">Find Shortest Path</button>
+        </div>
+        <div id="result-container"></div>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
